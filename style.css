@@ -1,0 +1,259 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+
+.banner {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://cdn.pixabay.com/photo/2017/02/19/08/00/network-2075774_1280.jpg') no-repeat center center/cover;
+  height: 60vh;
+}
+
+
+.btn-danger {
+  background-color: #b71c1c;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #e53935;
+}
+
+
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 1.8rem;
+  }
+}
+
+
+.banner {
+  
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/img/banner.jpg') no-repeat center center;
+  
+  
+  background-attachment: fixed; 
+  background-size: cover;
+  
+
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  color: #fff;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .banner {
+    background-attachment: scroll; 
+    height: 50vh;
+  }
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; 
+  background-color: #000 !important; 
+  box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  transition: background-color 0.3s ease;
+}
+
+
+body {
+  padding-top: 70px; 
+}
+
+
+.navbar .navbar-brand {
+  color: #fff !important;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+
+.navbar .navbar-brand .text-warning {
+  color: #39ff14 !important; /* verde neon */
+  text-shadow: 0 0 5px #39ff14, 0 0 15px #39ff14, 0 0 30px #39ff14;
+  animation: pulseNeon 2s infinite alternate;
+}
+
+
+@keyframes pulseNeon {
+  0% {
+    text-shadow: 0 0 5px #39ff14, 0 0 15px #39ff14, 0 0 30px #39ff14;
+  }
+  100% {
+    text-shadow: 0 0 10px #39ff14, 0 0 25px #39ff14, 0 0 50px #39ff14;
+  }
+}
+
+
+.navbar .nav-link {
+  color: #ccc !important;
+  font-weight: 500;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+
+.navbar .nav-link:hover {
+  color: #39ff14 !important;
+  text-shadow: 0 0 8px #39ff14;
+}
+
+
+body {
+  padding-top: 70px;
+  background-color: #0a0a0a;
+  color: #fff;
+}
+
+
+.text-neon {
+  color: #39ff14 !important;
+  text-shadow: 0 0 5px #39ff14, 0 0 15px #39ff14, 0 0 25px #39ff14;
+}
+
+
+.btn-neon {
+  background-color: transparent;
+  border: 2px solid #39ff14;
+  color: #39ff14;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn-neon:hover {
+  background-color: #39ff14;
+  color: #000;
+  box-shadow: 0 0 15px #39ff14;
+}
+
+
+.banner {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('/img/banner.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-shadow: 0 0 15px rgba(0,0,0,0.8);
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  color: #dcdcdc;
+}
+
+
+.servicos {
+  background-color: #0f0f0f;
+}
+
+.border-neon {
+  border: 1px solid #39ff14;
+  transition: 0.3s;
+}
+.border-neon:hover {
+  box-shadow: 0 0 15px #39ff14;
+  transform: translateY(-5px);
+}
+
+
+footer {
+  border-top: 1px solid #39ff14;
+  font-size: 0.9rem;
+}
+
+
+.bg-primary {
+  background-color: #000 !important; 
+  color: #fff !important;
+  padding: 60px 0;
+}
+
+.bg-primary *,
+.bg-primary .card * {
+  color: #fff !important; 
+}
+
+
+.bg-primary .card {
+  background-color: #111 !important; 
+  border: 1px solid #333 !important;
+  color: #fff !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bg-primary .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(57, 255, 20, 0.4);
+}
+
+
+.bg-primary .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #333;
+}
+
+
+.bg-primary .card-title {
+  color: #39ff14 !important; 
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+
+.bg-primary .card-text {
+  color: #eee !important; 
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.bg-primary .btn-primary {
+  background-color: #000 !important; 
+  border: 1px solid #39ff14 !important; 
+  color: #fff !important; 
+  font-weight: 600;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 200px;
+  align-self: center;
+  margin-top: 15px;
+  border-radius: 6px;
+}
+
+.bg-primary .btn-primary:hover {
+  background-color: #39ff14 !important;
+  color: #000 !important;
+  box-shadow: 0 0 10px #39ff14;
+}
+
+@media (max-width: 768px) {
+  .bg-primary .card {
+    margin-bottom: 20px;
+  }
+  .bg-primary .btn-primary {
+    width: 100%;
+  }
+}
